@@ -6,3 +6,19 @@ class River
     @name = name
     @stock = stock
   end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end # class end
