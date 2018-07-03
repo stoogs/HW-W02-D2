@@ -8,3 +8,4 @@ class Bear
     @stomach = []
 
   end
+end

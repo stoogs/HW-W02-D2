@@ -2,13 +2,14 @@ class River
 
   attr_reader :name, :stock
 
-  def initialize(name, stock)
+  def initialize(name)
     @name = name
-    @stock = stock
+    @stock = []
   end
 
-
-
+def put_fish_in_river(fish)
+  @stock << fish
+end
 
 
 
