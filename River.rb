@@ -12,7 +12,9 @@ def put_fish_in_river(fish)
 end
 
 def take_fish_from_river(fish)
-  @stock.delete(fish)
+   index = @stock.index(fish)
+       @stock.slice!(index, 1)
+
 end
 #   bus.pick_up(@queue.pop())
 

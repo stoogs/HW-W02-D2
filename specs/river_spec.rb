@@ -22,8 +22,13 @@ class RiverTest < MiniTest::Test
   end
 
   def test_take_fish_from_river
+    # Add a couple fish first
+    @river.put_fish_in_river(@fish1)  # put in @stock
+    @river.put_fish_in_river(@fish2)  # put in @stock
+    @river.put_fish_in_river(@fish3)  # put in @stock
+    # Remove 1 fish
     @river.take_fish_from_river(@fish1)
-    assert_equal(0, @river.stock.length)
+    assert_equal(2, @river.stock.length)
   end
 
 end # class end
