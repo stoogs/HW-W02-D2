@@ -25,11 +25,13 @@ end
 
 def test_bear_stomach_full
   @bear1.put_fish_in_bear(@fish1)
-  @bear1.put_fish_in_bear(@fish1)
-  assert_equal(2, @bear1.stomach.length)
+  @bear1.put_fish_in_bear(@fish2)
+  @bear1.put_fish_in_bear(@fish3)
+  assert_equal(3, @bear1.stomach.length)
 end
 
 def test_roar
    assert_equal("GRLOOOWWRRLL", @bear1.roar)
 end
+
 end # class end

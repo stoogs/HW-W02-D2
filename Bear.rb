@@ -10,6 +10,7 @@ class Bear
 
 def put_fish_in_bear(fish)
   @stomach << fish
+  
 end
 
 def roar

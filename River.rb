@@ -14,13 +14,7 @@ end
 def take_fish_from_river(fish)
   @stock.delete(fish)
 end
-
-
 #   bus.pick_up(@queue.pop())
-
-
-
-
 
 
 
