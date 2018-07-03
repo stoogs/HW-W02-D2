@@ -14,6 +14,22 @@ def test_bear_name
   assert_equal("Yogi", @bear1.name)
 end
 
+def test_bear_stomach_empty
+  assert_equal(0, @bear1.stomach.length)
+end
 
+def test_put_fish_in_bear
+  @bear1.put_fish_in_bear(@fish1)
+  assert_equal(1, @bear1.stomach.length)
+end
 
+def test_bear_stomach_full
+  @bear1.put_fish_in_bear(@fish1)
+  @bear1.put_fish_in_bear(@fish1)
+  assert_equal(2, @bear1.stomach.length)
+end
+
+def test_roar
+   assert_equal("GRLOOOWWRRLL", @bear1.roar)
+end
 end # class end
