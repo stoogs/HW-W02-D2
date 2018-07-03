@@ -1,11 +1,12 @@
 class Bear
 
-  attr_reader :name, :type, :stomach
+  attr_reader :name, :type
 
-  def initialize(name, type, stomach)
+  def initialize(name, type)
     @name = name
     @type = type
     @stomach = []
-
   end
-end
+
+
+end #class end
